@@ -286,11 +286,16 @@
     height: 1rem;
     width: 1rem;
     margin-right: .6rem;
-    background-color: var(--color-primary);
-    -webkit-mask-image: url(../imgs/svg/chevron-right.svg);
-    -webkit-mask-size: cover;
-    mask-image: url(../imgs/svg/chevron-right.svg);
-    mask-size: cover; }
+    background-image: url(../imgs/svg/chevron-right.svg);
+    background-size: cover; }
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+      .list-item::before {
+        background-color: var(--color-primary);
+        -webkit-mask-image: url(../imgs/svg/chevron-right.svg);
+        -webkit-mask-size: cover;
+        mask-image: url(../imgs/svg/chevron-right.svg);
+        mask-size: cover;
+        background-image: none; } }
 
 .recommend {
   font-size: 1rem;
