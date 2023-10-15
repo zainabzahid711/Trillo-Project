@@ -21,7 +21,7 @@ $grey-dark-3: #999;
 
 :root{
   --color-primary: #eb2f64;
-  --color-primary-light: #ff3365;
+  --color-primary-light: #FF3366;
   --color-primary-dark:  #8A265D;
 
 
@@ -45,6 +45,10 @@ $grey-dark-3: #999;
   
 
 }
+
+
+$bp-largest: 75em;     //1200px
+
 
 *{
   margin: 0;

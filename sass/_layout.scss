@@ -1,10 +1,14 @@
  .container{
-  max-width: 100rem;
+  max-width: 120rem;
   margin: 6rem auto;
   background-color: var(--grey-light-2);
   box-shadow: var(--shadow-dark);
   width: 75rem;
-  height: 60rem;
+  height: 70rem;
+
+  @media only screen and(max-width: $bp-largest){
+    margin: 0;
+  }
 
 }
 .header{
@@ -38,8 +42,8 @@
 .detail{
   font-size: .9rem;
   display: flex;
-  padding: 4rem;
-  background-color: var(--grey-light-2);
+  padding: 3rem 5.5rem 3rem 3rem;
+  background-color: var(--grey-light-1);
   border-bottom:  var(--line);  
 }
 
@@ -48,12 +52,11 @@
   box-shadow: var(--shadow-light);
   padding:  3rem 0rem 2rem 2rem;
   flex: 0 0 65%;
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 
 .user-reviews{
-  flex: 1;
-
+  flex: 0 0 35%;
 
   display: flex;
   align-items: center;
