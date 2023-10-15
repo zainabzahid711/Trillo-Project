@@ -42,12 +42,16 @@ $grey-dark-3: #999;
 
 
   --line:  1px solid var(--grey-light-2);
-  
-
 }
 
 
+
 $bp-largest: 75em;     //1200px
+$bp-large: 68.75em; //1100
+$bp-medium: 56.25em; //900
+$bp-small: 37.5em; //600px
+$bp-smallest: 31.25em; //500px
+
 
 
 *{
@@ -64,6 +68,10 @@ $bp-largest: 75em;     //1200px
 html{
   box-sizing: border-box;
   font-size: 100%; 
+
+  @media only screen and (max-width: 68.75em) {
+    font-size: 80%;
+  }
 
 }
 body{
